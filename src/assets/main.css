@@ -1,24 +1,84 @@
 @import './base.css';
 
 #app {
+  display: flex;
+  flex-flow: column nowrap;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.heading__special {
+  font-family: 'Jost-ExtraBold';
+  color: var(--white);
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 50px;
+  text-shadow: 5px 5px 0px #50b7f8;
+  text-transform: uppercase;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+h2 {
+  font-family: 'Jost-Bold';
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Jost-Medium';
+  color: var(--black);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.cloud {
+  width: 140px;
+  height: 140px;
+  filter: drop-shadow(5px 5px 0px #50b7f8);
+}
+
+.dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+}
+
+.dot.dot__active {
+  background-color: var(--white);
+}
+
+.chevron {
+  display: block;
+  position: relative;
+  height: 9px;
+  width: 32px;
+}
+.chevron__down {
+  position: absolute;
+  bottom: 25px;
+}
+.chevron:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--white);
+  transform: skew(0deg, 25deg);
+}
+.chevron:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: var(--white);
+  transform: skew(0deg, -25deg);
 }
 
 @media (min-width: 1024px) {
@@ -28,8 +88,22 @@ a,
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
+  }
+
+  .cloud {
+    width: 300px;
+    height: 300px;
+    filter: drop-shadow(7px 7px 0px #50b7f8);
+  }
+
+  .dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .chevron {
+    height: 11px;
+    width: 41px;
   }
 }
