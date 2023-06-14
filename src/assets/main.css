@@ -1,4 +1,4 @@
-@import './base.css';
+@import "./base.css";
 
 #app {
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .heading__special {
-  font-family: 'Jost-ExtraBold';
+  font-family: "Jost-ExtraBold";
   color: var(--white);
   font-weight: 800;
   font-size: 38px;
@@ -18,18 +18,22 @@
 }
 
 h2 {
-  font-family: 'Jost-Bold';
-  font-weight: 600;
-  font-size: 20px;
+  font-family: "Jost-Bold";
+  font-weight: 500;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 p {
-  font-family: 'Jost-Medium';
+  font-family: "Jost-Medium";
   color: var(--black);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .cloud {
@@ -50,37 +54,6 @@ p {
   background-color: var(--white);
 }
 
-.chevron {
-  display: block;
-  position: relative;
-  height: 9px;
-  width: 32px;
-}
-.chevron__down {
-  position: absolute;
-  bottom: 25px;
-}
-.chevron:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 50%;
-  background: var(--white);
-  transform: skew(0deg, 25deg);
-}
-.chevron:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 50%;
-  background: var(--white);
-  transform: skew(0deg, -25deg);
-}
-
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -89,6 +62,20 @@ p {
 
   #app {
     padding: 0 2rem;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .cloud {
@@ -102,8 +89,8 @@ p {
     height: 14px;
   }
 
-  .chevron {
+  /* .chevron {
     height: 11px;
     width: 41px;
-  }
+  } */
 }
