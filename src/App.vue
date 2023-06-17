@@ -1,11 +1,13 @@
 <template>
-  <header></header>
-
+  <StitchyLines />
+  <ContactFooter />
   <RouterView />
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
+import StitchyLines from "./components/StitchyLines.vue";
+import ContactFooter from "./components/ContactFooter.vue";
 </script>
 
 <style scoped>

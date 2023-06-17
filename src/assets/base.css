@@ -1,53 +1,38 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --white: #ffffff;
-  --black: #090a0b;
-  --light-blue: #95c9e9;
-  --dark-blue: #50b7f8;
+  --rusty-brown: #a33600;
+  --ivory-white: #fffcec;
+  --smokey-black: #090a0b;
 }
 
-/* semantic color variables for this project */
 :root {
-  --color-background: var(--light-blue);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
-
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
-
-  --color-heading: var(--white);
-  --color-text: var(--black);
-
-  --section-gap: 160px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --color-background: var(--ivory-white);
+  --color-heading: var(--rusty-brown);
+  --color-text: var(--smokey-black);
 }
 
 @font-face {
-  font-family: 'Jost-Medium';
-  src: url('/src/assets/Jost-Medium.ttf');
+  font-family: "Nunito-Light";
+  src: url("/src/assets/Nunito-Light.ttf");
 }
 
 @font-face {
-  font-family: 'Jost-Bold';
-  src: url('/src/assets/Jost-Bold.ttf');
+  font-family: "Nunito-Regular";
+  src: url("/src/assets/Nunito-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Jost-ExtraBold';
-  src: url('/src/assets/Jost-ExtraBold.ttf');
+  font-family: "Nunito-Medium";
+  src: url("/src/assets/Nunito-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Bold";
+  src: url("/src/assets/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Black";
+  src: url("/src/assets/Nunito-Black.ttf");
 }
 
 *,
@@ -64,8 +49,8 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
