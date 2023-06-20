@@ -1,7 +1,7 @@
 <template>
   <StitchyLines />
-  <ContactFooter />
   <RouterView />
+  <ContactFooter />
 </template>
 
 <script setup lang="ts">

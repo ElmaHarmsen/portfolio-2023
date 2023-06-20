@@ -5,7 +5,12 @@
       <h1 class="heading-main">Hi.</h1>
       <RouterLink to="/projects-overview">
         <button class="home-button">
-          <h2>Go</h2>
+          <h2>My work</h2>
+        </button>
+      </RouterLink>
+      <RouterLink to="/about">
+        <button class="home-button">
+          <h2>Me</h2>
         </button>
       </RouterLink>
     </div>

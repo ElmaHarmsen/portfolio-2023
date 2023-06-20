@@ -30,11 +30,6 @@ import StitchyLineHorizontal from "./StitchyLineHorizontal.vue";
 </script>
 
 <style scoped>
-.footer-container {
-  position: absolute;
-  top: 100vh;
-}
-
 .footer-lines {
   display: flex;
   flex-flow: column nowrap;

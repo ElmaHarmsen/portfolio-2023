@@ -6,6 +6,8 @@
 
 <style scoped>
 .stitchy-line {
+  position: relative;
+  z-index: 2;
   width: 100vw;
   height: 1px;
 }
